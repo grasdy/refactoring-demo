@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class CustomerTest {
 
-    @Test
+    @Test @Ignore
     public void shouldNameBeTest(){
 
         Customer sut = new Customer("Test" );
@@ -14,7 +14,7 @@ public class CustomerTest {
         Assert.assertEquals("Test", name);
     }
 
-    @Test
+    @Test @Ignore
     public void shouldContainRentalRecords(){
 
         Customer sut = new Customer("Test");
@@ -25,7 +25,7 @@ public class CustomerTest {
         Assert.assertTrue(statement.contains(" frequent renter points."));
     }
 
-    @Test
+    @Test @Ignore
     public void shouldContainNewReleaseStatus(){
         Customer sut = new Customer("Test");
         Movie movie = new Movie("NewRelease", PriceCodes.NewRelease);
